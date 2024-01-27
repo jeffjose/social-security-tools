@@ -23,6 +23,28 @@
         "How are my benefits affected by my spouse's earnings records, and vice versa."
     }
   ];
+
+  const contributors = [
+    {
+      initials: "GG",
+      name: "Greg Grothaus",
+      description:
+        "Greg is the primary developer of this site. He is a software engineer who has worked on this project on the side for several years.",
+      href: "gregable.com"
+    },
+    {
+      initials: "SK",
+      name: "Sotirios Keros",
+      description:
+        "Sotirios Keros a physician, financial planner, and co-founder of the not-for-profit Doctored Money. Sotirios contributed heavily to the design and correctness of the calculations this tool makes."
+    },
+    {
+      initials: "SN",
+      name: "Steve Nicolai",
+      description:
+        "Steve Nicolai a semi-retired telecom software engineer. Steve contributed the implementation of social security credits."
+    }
+  ];
 </script>
 
 <svelte:head>
@@ -124,24 +146,28 @@
       this without help from the internet. This page lists some of the contributors
       that have made this all possible.
     </p>
-    <h1>Major Contributors</h1>
-    <p class="leading-7 [&:not(:first-child)]:mt-6">
-      <a href="/contact">Greg Grothaus</a>: Greg is the primary developer of
-      this site. He is a software engineer who has worked on this project on the
-      side for several years. You can find Greg's personal blog at
-      <a href="http://www.gregable.com/"> gregable.com</a>.
-    </p>
-    <p class="leading-7 [&:not(:first-child)]:mt-6">
-      <a href="http://www.sotirioskeros.com/"> Sotirios Keros</a>: a physician,
-      financial planner, and co-founder of the not-for-profit
-      <a href="http://www.doctoredmoney.org/">Doctored Money</a>. Sotirios
-      contributed heavily to the design and correctness of the calculations this
-      tool makes.
-    </p>
-    <p class="leading-7 [&:not(:first-child)]:mt-6">
-      Steve Nicolai: a semi-retired telecom software engineer. Steve contributed
-      the implementation of social security credits.
-    </p>
+    <h3
+      class="font-heading mt-12 scroll-m-20 border-b pb-2 text-lg font-semibold tracking-tight first:mt-0"
+    >
+      Major Contributors
+    </h3>
+    <div class="flex flex-col gap-2 mt-2">
+      {#each contributors as contributor}
+        <div class="w-[30rem] bg-background/20 rounded-lg border p-5">
+          <div class="flex items-center gap-2">
+            <div
+              class="rounded-full h-10 w-10 bg-red-500 items-center justify-center flex font-semibold"
+            >
+              {contributor.initials.toUpperCase()}
+            </div>
+            <p class="font-semibold">{contributor.name}</p>
+          </div>
+          <div class="mt-4">
+            {contributor.description}
+          </div>
+        </div>
+      {/each}
+    </div>
 
     <h3
       class="font-heading mt-12 scroll-m-20 border-b pb-2 text-2xl font-semibold tracking-tight first:mt-0"
