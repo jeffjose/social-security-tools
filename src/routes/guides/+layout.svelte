@@ -4,13 +4,6 @@
 </script>
 
 <Header />
-<main>
+<main class="container">
   <slot />
 </main>
-
-<style>
-  main {
-    max-width: 1080px;
-    margin: 0 auto;
-  }
-</style>

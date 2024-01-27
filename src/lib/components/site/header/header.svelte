@@ -20,7 +20,7 @@
 >
   <div class="flex justify-between h-14 p-5 items-center">
     <div class="gap-5 items-center flex">
-      <div class="hidden font-semibold ml-2 md:flex gap-2">
+      <div class="hidden font-semibold ml-2 sm:flex gap-2">
         <svg
           class="w-6 h-6"
           viewBox="0 0 32 34"
@@ -69,7 +69,7 @@
             href={option.link}
             class="transition-colors hover:text-foreground/80 {$page.url
               .pathname == option.link
-              ? 'text-foreground'
+              ? 'text-foreground font-semibold'
               : 'text-foreground/60'}">{option.name}</a
           >
         {/each}
