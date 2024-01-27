@@ -1,9 +1,9 @@
 <script lang="ts">
-  import Header2 from "$lib/components/Header2.svelte";
+  import { Header } from "$lib/components/site";
   import GuideFooter from "./guide-footer.svelte";
 </script>
 
-<Header2 active="Guides" />
+<Header />
 <main>
   <slot />
 </main>
