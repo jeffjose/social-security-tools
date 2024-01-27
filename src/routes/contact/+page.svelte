@@ -1,12 +1,10 @@
 <script lang="ts">
-  import Header from "$lib/components/Header.svelte";
 </script>
 
 <svelte:head>
   <title>Social Security Calculator - Contact</title>
 </svelte:head>
 
-<Header active="Contact" />
 <main>
   <div>
     <h1>Contact the Developer</h1>

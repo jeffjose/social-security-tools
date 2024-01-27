@@ -69,7 +69,7 @@
             href={option.link}
             class="transition-colors hover:text-foreground/80 {$page.url
               .pathname == option.link
-              ? 'text-foreground font-semibold'
+              ? 'text-foreground'
               : 'text-foreground/60'}">{option.name}</a
           >
         {/each}

@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Header from "$lib/components/Header.svelte";
   import CopyPasteDemoMp4 from "$lib/videos/copy-paste-demo.mp4";
   import CopyPasteDemoPoster from "$lib/videos/copy-paste-demo-poster.jpg";
   import CombinedDemoMp4 from "$lib/videos/combined-demo.mp4";
@@ -19,7 +18,6 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
 </svelte:head>
 
-<Header />
 <main>
   <div class="jumbotron-grid">
     <div>
@@ -218,7 +216,9 @@
     font-weight: 400;
     text-decoration: none;
     display: flex;
-    box-shadow: 0 0 0 1px #5cb85c, 0 1px 2px 0 rgba(31, 42, 55, 0.4);
+    box-shadow:
+      0 0 0 1px #5cb85c,
+      0 1px 2px 0 rgba(31, 42, 55, 0.4);
     align-items: center;
     justify-content: center;
     transition: all 0.2s ease-out;

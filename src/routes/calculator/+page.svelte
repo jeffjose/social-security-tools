@@ -1,7 +1,6 @@
 <script lang="ts">
   import { context } from "$lib/context";
 
-  import Header from "$lib/components/Header.svelte";
   import PasteFlow from "$lib/components/PasteFlow.svelte";
   import IndexedEarningsReport from "$lib/components/IndexedEarningsReport.svelte";
   import EarningsReport from "$lib/components/EarningsReport.svelte";
@@ -26,7 +25,6 @@
   }
 </script>
 
-<Header active="Calculator" />
 <main>
   {#if isPasteFlow}
     <PasteFlow on:done={pasteDone} />
