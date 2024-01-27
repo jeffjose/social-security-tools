@@ -1,4 +1,28 @@
 <script lang="ts">
+  import { HandCoins, Heart, Mail, Palmtree, TrendingUp } from "lucide-svelte";
+
+  const whatifs = [
+    {
+      icon: HandCoins,
+      description:
+        "What happens to my benefit if I earn additional wages for several more years?"
+    },
+    {
+      icon: TrendingUp,
+      description:
+        "How does my benefit change as my total earnings grow during my lifetime?"
+    },
+    {
+      icon: Palmtree,
+      description:
+        "What happens if I choose to take my benefits early? What if I delay and take them late?"
+    },
+    {
+      icon: Heart,
+      description:
+        "How are my benefits affected by my spouse's earnings records, and vice versa."
+    }
+  ];
 </script>
 
 <svelte:head>
@@ -26,22 +50,19 @@
       how different choices might affect their overall benefit. Scenarios
       include:
     </p>
-    <ul class="leading-7 [&:not(:first-child)]:mt-6">
-      <li>
-        What happens to my benefit if I earn additional wages for several more
-        years?
-      </li>
-      <li>
-        How does my benefit change as my total earnings grow during my lifetime?
-      </li>
-      <li>
-        What happens if I choose to take my benefits early? What if I delay and
-        take them late?
-      </li>
-      <li>
-        How are my benefits affected by my spouse's earnings records, and vice
-        versa.
-      </li>
+    <ul class="leading-7 [&:not(:first-child)]:mt-6 flex flex-wrap gap-2">
+      {#each whatifs as whatif}
+        <div
+          class="w-1/3 rounded text-muted-foreground transition border flex items-center justify-center flex-col p-8 gap-5 hover:bg-foreground/5 hover:border-foreground/50 hover:text-foreground"
+        >
+          <div class="p-5 bg-foreground/5 rounded-full">
+            <svelte:component this={whatif.icon} class="h-10 w-10" />
+          </div>
+          <p class="text-sm text-center">
+            {whatif.description}
+          </p>
+        </div>
+      {/each}
     </ul>
 
     <h3
