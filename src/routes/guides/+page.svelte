@@ -8,7 +8,7 @@
   <title>Social Security Calculator - Guides</title>
 </svelte:head>
 
-<div>
+  <div class="my-10">
   <h1 class="mt-10 mb-5 text-4xl font-bold tracking-tight">Guides</h1>
   <ul class="flex flex-wrap gap-2">
     {#each blurbs as blurb}
