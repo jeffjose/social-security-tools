@@ -41,17 +41,17 @@
         </Alert.Description>
       </Alert.Root>
     </div>
-    <p class="leading-7 [&:not(:first-child)]:mt-6">
+    <p class="leading-7 [&:not(:first-child)]:mt-6 w-1/2">
       I am the right person to answer questions specifically about this site, if
       you spot bugs or have suggestions for things that could be clearer, or
       even just want to say thanks, you can contact me at:
     </p>
     <ul
-      class="leading-7 [&:not(:first-child)]:mt-6 gap-2 flex flex-col text-sm"
+      class="leading-7 [&:not(:first-child)]:mt-6 gap-2 flex flex-col text-sm w-[16rem]"
     >
       {#each items as item}
         <a
-          class="flex gap-2 items-center group hover:text-foreground text-muted-foreground transition"
+          class="flex gap-2 items-center group hover:text-foreground text-muted-foreground transition border hover:border-foreground/30 rounded"
           href={item.href}
         >
           <div class="bg-foreground/5 group-hover:bg-foreground/10 p-2 rounded">
