@@ -1,5 +1,4 @@
 <script lang="ts">
-  import "$lib/global.css";
   import { GuidesSchema } from "$lib/schema-org";
   import HeroImage from "./hero.svg";
   import ErrorMessageImage from "./error.png";

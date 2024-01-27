@@ -1,6 +1,4 @@
 <script lang="ts">
-  import "$lib/global.css";
-
   import Header from "$lib/components/Header.svelte";
   import CopyPasteDemoMp4 from "$lib/videos/copy-paste-demo.mp4";
   import CopyPasteDemoPoster from "$lib/videos/copy-paste-demo-poster.jpg";

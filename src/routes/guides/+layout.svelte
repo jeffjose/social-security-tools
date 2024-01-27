@@ -1,5 +1,4 @@
 <script lang="ts">
-  import "$lib/global.css";
   import Header from "$lib/components/Header.svelte";
   import GuideFooter from "./guide-footer.svelte";
 </script>

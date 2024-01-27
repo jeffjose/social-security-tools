@@ -13,7 +13,7 @@
 -->
 
 <script lang="ts">
-  import "$lib/global.css";
+ 
   import { createEventDispatcher } from "svelte";
   import { Birthdate } from "../birthday";
 

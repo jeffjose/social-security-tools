@@ -1,5 +1,4 @@
 <script lang="ts">
-  import "$lib/global.css";
   import EligibilityTable from "./EligibilityTable.svelte";
   import Expando from "./Expando.svelte";
   import { Recipient } from "$lib/recipient";

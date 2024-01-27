@@ -1,5 +1,4 @@
 <script lang="ts">
-  import "$lib/global.css";
   import * as constants from "$lib/constants";
   import { Recipient } from "$lib/recipient";
   import RName from "./RecipientName.svelte";

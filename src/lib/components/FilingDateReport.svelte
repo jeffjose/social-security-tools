@@ -1,5 +1,4 @@
 <script lang="ts">
-  import "$lib/global.css";
   import { Recipient } from "$lib/recipient";
   import * as constants from "$lib/constants";
   import { MonthDate, MonthDuration } from "$lib/month-time";
