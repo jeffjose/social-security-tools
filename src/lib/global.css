@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   /**
@@ -75,4 +79,12 @@ p {
   .onlyprint {
     display: none !important;
   }
+}
+
+.printurl {
+  margin: 0 1em;
+  line-height: 40px;
+  color: rgb(50, 50, 50);
+  font-weight: 900;
+  font-size: 20px;
 }

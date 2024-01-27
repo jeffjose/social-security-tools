@@ -1,9 +1,9 @@
 import adapter from "@sveltejs/adapter-vercel";
-import preprocess from "svelte-preprocess";
+import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
 
 /** @type {import('@sveltejs/kit').Config} */
 export default {
-  preprocess: preprocess(),
+  preprocess: vitePreprocess(),
 
   kit: {
     adapter: adapter({
@@ -11,10 +11,10 @@ export default {
       assets: "build",
       fallback: undefined,
       precompress: false,
-      strict: true,
+      strict: true
     }),
     prerender: {
-      handleHttpError: "warn",
-    },
-  },
+      handleHttpError: "warn"
+    }
+  }
 };
