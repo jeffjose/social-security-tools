@@ -75,7 +75,7 @@
     <ul class="leading-7 [&:not(:first-child)]:mt-6 flex flex-wrap gap-2">
       {#each whatifs as whatif}
         <div
-          class="w-1/3 rounded text-muted-foreground transition border flex items-center justify-center flex-col p-8 gap-5 hover:bg-foreground/5 hover:border-foreground/50 hover:text-foreground"
+          class="w-full sm:w-1/3 rounded text-muted-foreground transition border flex items-center justify-center flex-col p-8 gap-5 hover:bg-foreground/5 hover:border-foreground/50 hover:text-foreground"
         >
           <div class="p-5 bg-foreground/5 rounded-full">
             <svelte:component this={whatif.icon} class="h-10 w-10" />
@@ -153,7 +153,7 @@
     </h3>
     <div class="flex flex-col gap-2 mt-2">
       {#each contributors as contributor}
-        <div class="w-[30rem] bg-background/20 rounded-lg border p-5">
+        <div class="sm:w-[30rem] bg-background/20 rounded-lg border p-5">
           <div class="flex items-center gap-2">
             <div
               class="rounded-full h-10 w-10 bg-red-500 items-center justify-center flex font-semibold"
